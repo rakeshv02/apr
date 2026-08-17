@@ -245,6 +245,93 @@ ReactDOM.createRoot(document.getElementById('root')).render(<App />);
   }
 })();
 </script>
+
+<section id="seo-content">
+  <style>
+    #seo-content{max-width:760px;margin:2.5rem auto;padding:0 1.25rem 3rem;font-family:'Segoe UI',system-ui,Arial,sans-serif;color:#334155;line-height:1.7}
+    #seo-content h2{font-size:1.35rem;color:#0f172a;margin:2rem 0 .75rem}
+    #seo-content h3{font-size:1.05rem;color:#0f172a;margin:1.25rem 0 .5rem}
+    #seo-content p,#seo-content li{font-size:.95rem}
+    #seo-content ul{padding-left:1.4rem;margin:.5rem 0}
+    #seo-content .example{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:1rem 1.25rem;margin:1rem 0}
+    @media(prefers-color-scheme:dark){#seo-content{color:#cbd5e1}#seo-content h2,#seo-content h3{color:#f1f5f9}#seo-content .example{background:#1e293b;border-color:#334155}}
+  </style>
+  <h2>How to Use the APR Calculator</h2>
+  <p>The APR Calculator finds the true Annual Percentage Rate of a loan, including all fees, so you can compare the real cost of different borrowing options on a level playing field. Enter the loan amount, the quoted nominal interest rate, the loan term, and any upfront fees or charges (arrangement fees, broker fees, processing fees). The calculator works backwards from your actual monthly payment to find the effective annual rate that accounts for all these costs — the APR. This is the single number that regulators in the UK, US, and EU require lenders to display prominently, because it allows accurate comparisons between products with different fee structures, compounding periods, and rate presentations.</p>
+  <p>The Annual Percentage Rate is a standardised measure of the cost of credit expressed as a yearly rate. A loan with a 5% nominal interest rate and a £1,500 arrangement fee is not actually a 5% loan — the fee increases the true cost of borrowing significantly, especially on shorter-term loans. The APR captures this by spreading all fees across the loan term and expressing the total cost as an annual percentage. This is why two mortgages with identical headline rates can have different APRs — one may have lower fees and a higher rate, the other higher fees and a lower rate. Comparing APRs rather than headline rates reveals which is genuinely cheaper over the repayment period.</p>
+  <p>In the UK, lenders are legally required to display an Annual Percentage Rate under the Consumer Credit Act. UK mortgage lenders use the Annual Percentage Rate of Charge (APRC), which includes all mandatory fees over the mortgage term. In the US, the Truth in Lending Act (TILA) requires lenders to disclose APR including closing costs and other charges. However, different jurisdictions and product types calculate APR slightly differently — mortgage APR calculations include certain fees that personal loan APR does not, for example. This calculator uses a standard method appropriate for personal loans, car finance, and credit cards; for mortgage APRC comparisons, use a dedicated mortgage calculator.</p>
+
+  <h2>When to Use the APR Calculator</h2>
+  <ul>
+    <li><strong>Comparing personal loans:</strong> Two lenders quote different rates and fees — calculate APR for both to find the genuinely cheaper option.</li>
+    <li><strong>Car finance:</strong> Dealers often quote flat rates or monthly payments; use APR to understand the true annual cost of the finance deal.</li>
+    <li><strong>Credit card cost analysis:</strong> Convert a monthly interest rate to its annual equivalent for direct comparison with loan rates.</li>
+    <li><strong>Business loans:</strong> Assess the real cost of short-term business lending where fees are proportionally larger.</li>
+    <li><strong>Checking lender compliance:</strong> Verify that the APR a lender has quoted matches what the fee structure actually implies.</li>
+  </ul>
+
+  <div class="example"><strong>Example:</strong> £10,000 loan over 3 years at 8% nominal rate with a £300 arrangement fee. Nominal monthly payment ≈ £313. Including the fee in the cost calculation: effective APR ≈ <strong>9.8%</strong> — nearly 2% higher than the headline rate suggests.</div>
+
+  <h2>Frequently Asked Questions</h2>
+  <h3>What is the difference between APR and interest rate?</h3>
+  <p>The interest rate is the annual cost of borrowing the principal, expressed as a percentage, without including any fees. The APR is a broader measure that includes the interest rate plus all mandatory fees (arrangement fees, broker fees, etc.) expressed as a single annual percentage. APR is always equal to or higher than the interest rate because it includes additional costs.</p>
+  <h3>Why do two loans with the same interest rate have different APRs?</h3>
+  <p>Because they have different fees. A loan with a 5% rate and a £2,000 arrangement fee has a higher APR than a loan with a 5% rate and no fees, because the fee increases the total cost of borrowing. APR spreads all costs across the loan term, so a £2,000 fee on a short-term loan inflates the APR more than the same fee on a 25-year mortgage.</p>
+  <h3>Is a lower APR always better?</h3>
+  <p>Generally yes — a lower APR means a lower total cost of borrowing on an equivalent loan. However, APR comparisons are only valid between loans with the same term. A 5-year loan at 6% APR is not directly comparable to a 10-year loan at 5% APR because the total interest paid depends heavily on the term length. Always compare loans with the same repayment period when using APR as the deciding metric.</p>
+  <h3>How is APR calculated?</h3>
+  <p>APR is calculated using the Internal Rate of Return (IRR) method — it finds the annual rate that equates the present value of all repayments to the amount borrowed after deducting all upfront fees. The mathematical process requires iterative approximation (solving for the rate rather than applying it directly), which is why this calculator is far faster than doing it by hand.</p>
+  <h3>What fees are included in UK APR calculations?</h3>
+  <p>Under UK Consumer Credit Act rules, APR must include all compulsory fees that are a condition of the credit — arrangement fees, administration fees, broker fees paid to the lender, and any insurance that is a condition of the loan. Voluntary insurance, optional early repayment fees, and late payment charges are generally excluded from the APR calculation.</p>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between APR and interest rate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The interest rate covers the annual borrowing cost of the principal only. APR includes the interest rate plus all mandatory fees, expressed as one annual percentage — always equal to or higher than the raw rate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do two loans with the same interest rate have different APRs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because their fees differ. APR spreads all costs across the loan term, so a higher arrangement fee increases the APR — especially on shorter-term loans where fees are proportionally larger."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a lower APR always better?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generally yes for loans of the same term. APR comparisons are only valid between loans with the same repayment period — total interest paid also depends on how long you borrow for."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is APR calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "APR is calculated using the Internal Rate of Return (IRR) method — finding the annual rate that equates the present value of all repayments to the net amount borrowed after fees. It requires iterative approximation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What fees are included in UK APR calculations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UK APR must include all compulsory fees — arrangement fees, administration fees, broker fees paid to the lender, and mandatory insurance. Voluntary insurance and late payment charges are excluded."
+      }
+    }
+  ]
+}
+</script>
 <footer style="background:#1a1a2e;margin-top:48px;padding:28px 24px;text-align:center;font-family:'Segoe UI',system-ui,Arial,sans-serif;font-size:13px;color:#94a3b8;line-height:1.8">
 <div style="font-weight:700;color:#fff;font-size:15px">⚡ Tabutility</div>
 <div>Free, private, browser-based tools. No sign-up, no tracking.</div>
